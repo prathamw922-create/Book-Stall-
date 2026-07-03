@@ -54,7 +54,7 @@ const BookCard = ({ book }) => {
       id={`book-card-${book._id}`}
     >
       {/* Image Container */}
-      <div className="relative aspect-[3/4] overflow-hidden bg-linear-to-b from-surface-100 to-surface-200">
+      <div className="relative aspect-3/4 overflow-hidden bg-linear-to-b from-surface-100 to-surface-200">
         <img
           src={book.images?.[0] || '/placeholder-book.jpg'}
           alt={book.title}

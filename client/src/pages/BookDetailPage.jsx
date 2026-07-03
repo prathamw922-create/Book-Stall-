@@ -142,7 +142,7 @@ const BookDetailPage = () => {
         <div className="grid lg:grid-cols-2 gap-0">
           {/* Left: Images */}
           <div className="p-8 lg:p-12 bg-surface-50 flex flex-col items-center border-r border-surface-200">
-            <div className="relative w-full max-w-sm aspect-[3/4] rounded-xl overflow-hidden shadow-2xl mb-6">
+            <div className="relative w-full max-w-sm aspect-3/4 rounded-xl overflow-hidden shadow-2xl mb-6">
               <img
                 src={images[activeImage]}
                 alt={book.title}

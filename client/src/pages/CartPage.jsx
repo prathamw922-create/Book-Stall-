@@ -72,7 +72,7 @@ const CartPage = () => {
               {cart.items?.map((item) => (
                 <div key={item.book._id} className="p-6 flex flex-col sm:flex-row gap-6">
                   {/* Image */}
-                  <Link to={`/books/${item.book._id}`} className="shrink-0 w-24 sm:w-32 aspect-[3/4] rounded-lg overflow-hidden border border-surface-200 hover:shadow-md transition-all">
+                  <Link to={`/books/${item.book._id}`} className="shrink-0 w-24 sm:w-32 aspect-3/4 rounded-lg overflow-hidden border border-surface-200 hover:shadow-md transition-all">
                     <img
                       src={item.book.images?.[0] || '/placeholder-book.jpg'}
                       alt={item.book.title}
